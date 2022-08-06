@@ -8,14 +8,6 @@
 
 body {
   font-family: 'Roboto Slab', sans-serif;
-
-}
-
-input {
-  display: flex;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  background-color: #5A678E;
 }
 
 footer {
@@ -23,63 +15,17 @@ footer {
   text-align: center;
 }
 
-.container {
-  background: #2A324B;
-  max-width: 500px;
-  margin: 30px auto;
-  overflow: auto;
-  min-height: 300px;
-  /* border: 1px solid steelblue; */
-  padding: 30px;
-  border-radius: 5px;
-}
-
 #appBar {
-  background-color:#2B2F39;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* margin-bottom: 20px; */
-}
-
-.btn {
-  display: inline-block;
-  background : #5A678E;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 15px;
-  font-family: inherit;
+  background-color: transparent;
 }
 
 html {
   background-color: #2A324B;
 }
 
-.home,
-.reports,
-.products {
-  display: flex;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-}
-
 .line {
   margin-bottom: 20px;
 }
 
-.saveBtn {
-  height: 35px;
-  width: 100%;
-}
 
 

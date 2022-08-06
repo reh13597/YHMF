@@ -4,9 +4,10 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
+import { View, Image, StyleSheet } from 'react-native';
+import logo from '../assets/yhmflogo.png';
 
 export default function AppBarItems() {
   const [btnColor, setBtnColor] = React.useState('#7F95D1');
@@ -14,6 +15,13 @@ export default function AppBarItems() {
   const highlightBtn = (event, newBtnColor) => {
     setBtnColor(newBtnColor);
   };
+
+  const styles = StyleSheet.create({
+    logo: {
+      width: 150,
+      height: 150,
+    },
+  });
 
   return (
     <Box sx={{flexGrow: 1,}}>
@@ -26,15 +34,11 @@ export default function AppBarItems() {
             </Routes>
           </Router> */}
 
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ display: { xs: 'none', sm: 'block' } }}
-            style={{letterSpacing: 3}}
+          <Image
+            style={styles.logo}
+            source={logo}
           >
-            YOUTH HUNGER MISSION FOUNDATION
-          </Typography>
+          </Image>
           
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
@@ -88,32 +92,6 @@ export default function AppBarItems() {
               </Typography>
             </ToggleButton>
           </ToggleButtonGroup>
-
-            {/* <Button 
-              variant='text' 
-              style={{color: 'white', letterSpacing: 2}} 
-              onClick={btnColor => setBtnColor(btnColor)}
-            >
-              Home
-            </Button>
-            <Button 
-              variant='text' 
-              style={{color: 'white', letterSpacing: 2}}
-            >
-              The Team
-            </Button>
-            <Button 
-              variant='text' 
-              style={{color: 'white', letterSpacing: 2}}
-            >
-              Events
-            </Button>
-            <Button 
-              variant='text' 
-              style={{color: 'white', letterSpacing: 2}}
-            >
-              Contact
-            </Button> */}
           </Box>
         </Toolbar>
       </AppBar>

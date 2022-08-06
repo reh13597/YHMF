@@ -1,12 +1,15 @@
 import './App.css';
-import Header from './components/Header'
-import AppBar from './components/AppBar'
-import Line from './components/Line'
-import React, { useState } from 'react'
+import AppBar from './components/AppBar';
+import Header from './components/Header';
+import Line from './components/Line';
+import React, { useState } from 'react';
+import { View } from "react-native";
 
 const App = () => {
   return (
-    <AppBar/>
+    <View>
+      <Header/>
+    </View>
   )
 }
 

@@ -1,24 +1,39 @@
-import Button from './Button'
-import React from 'react'
+import React from 'react';
+import AppBar from './AppBar';
+import Button from '@mui/material/Button';
+import image from '../assets/yhmfexecs.jpg';
+import { ImageBackground, StyleSheet, Text, View } from "react-native";
 
-const Header = ({ title, onAdd, showAdd }) => {
-    const onClick = () => {
-        console.log('click')
-    }
+const Header = () => {
+  return (
+    <View style={styles.container}>
+      <ImageBackground source={image} style={styles.image}>
+        <AppBar />
+        <Text style={styles.text}>
+          YOUTH HUNGER MISSION FOUNDATION
+          <Button variant="contained">Get Involved!</Button>  
+        </Text>
+      </ImageBackground>
+    </View>
+  );
+};
 
-    const current = new Date();
-    const date = `${current.getMonth()+1}/${current.getDate()}/${current.getFullYear()}`;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  image: {
+    flex: 1,
+    justifyContent: "center",
+  },
+  text: {
+    color: "white",
+    fontSize: 60,
+    lineHeight: 350 ,
+    letterSpacing: 8,
+    fontWeight: "bold",
+    textAlign: "center",
+  },
+});
 
-    return (
-        <header className='header'>
-            <h1 style={headingStyle}>{date}</h1>
-            <Button color={showAdd ? 'red' : 'green'} text={showAdd ? 'Close' : 'Add'} onClick={onAdd}/>
-        </header>
-  )
-}
-
-const headingStyle = {
-    color: 'white',
-}
-
-export default Header
+export default Header;
