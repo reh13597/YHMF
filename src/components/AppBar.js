@@ -6,7 +6,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
-import { View, Image, StyleSheet } from 'react-native';
+import { Image, StyleSheet } from 'react-native';
 import logo from '../assets/yhmflogo.png';
 
 export default function AppBarItems() {
@@ -27,13 +27,6 @@ export default function AppBarItems() {
     <Box sx={{flexGrow: 1,}}>
       <AppBar id='appBar' className='appBar' position="static" >
         <Toolbar>
-
-          {/* <Router>
-            <SideBar/>
-            <Routes>
-            </Routes>
-          </Router> */}
-
           <Image
             style={styles.logo}
             source={logo}
