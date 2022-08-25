@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Team() {
+const Team = () => {
   return (
     <div className='team'>
       <h1>Team</h1>

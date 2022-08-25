@@ -1,15 +1,35 @@
 import './App.css';
-import AppBar from './components/AppBar';
-import Header from './components/Header';
-import Line from './components/Line';
-import React, { useState } from 'react';
-import { View } from "react-native";
+import Home from './pages/Home';
+import Events from './pages/Events';
+import Team from './pages/Team';
+import Contact from './pages/Contact';
+import React from 'react';
+import {
+  BrowserRouter,
+  Route,
+  Routes
+} from "react-router-dom";
+
 
 const App = () => {
   return (
-    <View>
-      <Header/>
-    </View>
+    // <BrowserRouter>
+    //   <Routes>
+    //     <Route path="/">
+    //       <Header />
+    //     </Route>
+    //     <Route path="/events">
+    //       <Events />
+    //     </Route>
+    //     <Route path="/team">
+    //       <Team />
+    //     </Route>
+    //     <Route path="/contact">
+    //       <Contact />
+    //     </Route>
+    //   </Routes>
+    // </BrowserRouter>
+    <Home/>
   )
 }
 

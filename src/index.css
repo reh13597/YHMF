@@ -15,12 +15,16 @@ footer {
   text-align: center;
 }
 
-#appBar {
+#navBar {
   background-color: transparent;
 }
 
+#newsletter {
+  background-color: #d7d7d8;
+}
+
 html {
-  background-color: #2A324B;
+  background-color: #e6e6e6;
 }
 
 .line {

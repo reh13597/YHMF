@@ -1,39 +1,45 @@
 import React from 'react';
-import AppBar from './AppBar';
+import NavBar from './NavBar';
 import Button from '@mui/material/Button';
-import image from '../assets/yhmfexecs.jpg';
-import { ImageBackground, StyleSheet, Text, View } from "react-native";
+import Stack from '@mui/material/Stack';
+import Box from '@mui/material/Box';
+import { StyleSheet, Text, View } from "react-native";
 
 const Header = () => {
   return (
-    <View style={styles.container}>
-      <ImageBackground source={image} style={styles.image}>
-        <AppBar />
-        <Text style={styles.text}>
-          YOUTH HUNGER MISSION FOUNDATION
-          <Button variant="contained">Get Involved!</Button>  
-        </Text>
-      </ImageBackground>
+    <View>
+      <Box sx={{ backgroundColor: 'black', width: null, height: 625 }}>
+        <NavBar/>
+        <Stack alignItems="center">
+            <Text style={styles.text}>
+              YOUTH HUNGER MISSION FOUNDATION
+            </Text>
+            <Button variant="contained" style={styles.button}>Get Involved!</Button>
+        </Stack>
+      </Box>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  image: {
-    flex: 1,
-    justifyContent: "center",
-  },
   text: {
     color: "white",
-    fontSize: 60,
-    lineHeight: 350 ,
-    letterSpacing: 8,
+    fontSize: 50,
+    lineHeight: 250,
+    letterSpacing: 6,
     fontWeight: "bold",
     textAlign: "center",
+    flexDirection: "column",
   },
+  button: {
+    borderRadius: 10,
+    width: 215,
+    height: 60,
+    fontSize: 18,
+    fontWeight: "bold",
+    color: "white",
+    backgroundColor: "grey",
+  }
 });
 
 export default Header;
