@@ -5,14 +5,14 @@ import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import { StyleSheet, Text, View } from "react-native";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <View>
       <Box sx={{ backgroundColor: 'black', width: null, height: 625 }}>
         <NavBar/>
         <Stack alignItems="center">
             <Text style={styles.text}>
-              YOUTH HUNGER MISSION FOUNDATION
+              {props.title}
             </Text>
             <Button variant="contained" style={styles.button}>Get Involved!</Button>
         </Stack>

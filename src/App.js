@@ -6,30 +6,21 @@ import Contact from './pages/Contact';
 import React from 'react';
 import {
   BrowserRouter,
+  Routes,
   Route,
-  Routes
 } from "react-router-dom";
 
 
 const App = () => {
   return (
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route path="/">
-    //       <Header />
-    //     </Route>
-    //     <Route path="/events">
-    //       <Events />
-    //     </Route>
-    //     <Route path="/team">
-    //       <Team />
-    //     </Route>
-    //     <Route path="/contact">
-    //       <Contact />
-    //     </Route>
-    //   </Routes>
-    // </BrowserRouter>
-    <Home/>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={ <Home /> }/>
+        <Route path="/events" element={ <Events /> }/>
+        <Route path="/team" element={ <Team /> }/>
+        <Route path="/contact" element={ <Contact /> }/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

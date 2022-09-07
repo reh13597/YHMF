@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -7,8 +7,11 @@ import logo from '../assets/yhmflogo.png';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { useNavigate } from 'react-router-dom';
 
 const NavBar = () => {
+  const navigate = useNavigate();
+  
   const styles = StyleSheet.create({
     logo: {
       width: 150,
@@ -28,19 +31,22 @@ const NavBar = () => {
     <ThemeProvider theme={theme}>
       <AppBar id='navBar' position="static" >
       <Toolbar>
-        <Image
-          style={styles.logo}
-          source={logo}
-        >
-        </Image>
-
+        <Image style={styles.logo} source={logo}/>
         <Box sx={{ flexGrow: 1 }} />
         <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
           <ButtonGroup size="large" color="primary" aria-label="text button group">
-            <Button>Home</Button>
-            <Button>Events</Button>
-            <Button>The Team</Button>
-            <Button>Contact</Button>
+            <Button onClick={() => navigate("/")}>
+              Home
+            </Button>
+            <Button onClick={() => navigate("/events")}>
+              Events
+            </Button>
+            <Button onClick={() => navigate("/team")}>
+              The Team
+            </Button>
+            <Button onClick={() => navigate("/contact")}>
+              Contact
+            </Button>
           </ButtonGroup>
         </Box>
       </Toolbar>
