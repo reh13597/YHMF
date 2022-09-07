@@ -10,7 +10,7 @@ const InfoBlock = () => {
           <Typography variant="h2" align="center" style={{ letterSpacing: 1.5 }} gutterBottom>
             About Us
           </Typography>
-          <Typography variant="subtitle1" align="left" style={{ letterSpacing: 1.5, maxWidth: 580 }} gutterBottom>
+          <Typography variant="subtitle1" align="center" style={{ letterSpacing: 1.5, maxWidth: 580 }} gutterBottom>
             YHMF (Youth Hunger Mission Foundation) is a student-run, not for profit organization in Vancouver, British Columbia.
             Founded in 2014, YHMF has been working towards greater social and equality change through a medium of hosting fundraising events to raise awareness and aid at-risk youth.
             Although we have been operating on a local scale since our founding, we wish to progress to a provincial, or even a national scale.
