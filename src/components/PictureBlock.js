@@ -8,10 +8,10 @@ const EventBlock = (props) => {
     return (
       <Stack align="center">
         <Box>
-          <Typography variant="h2" align="center" style={{ letterSpacing: 1.5 }} gutterBottom>
+          <Typography variant="h4" align="center" style={{ letterSpacing: 1.5 }} gutterBottom>
             {props.title}
           </Typography>
-          <Typography variant="subtitle1" align="center" style={{ letterSpacing: 1.5, maxWidth: 580 }} gutterBottom>
+          <Typography variant="h5" align="center" style={{ letterSpacing: 1.5, maxWidth: 580 }} gutterBottom>
             {props.text}
           </Typography>
           <Image source={props.image} style={styles.image}/>
