@@ -6,7 +6,7 @@ import { Image, StyleSheet } from 'react-native';
 
 const EventBlock = (props) => {
     return (
-      <Stack align="center" spacing={20}>
+      <Stack align="center">
         <Box>
           <Typography variant="h2" align="center" style={{ letterSpacing: 1.5 }} gutterBottom>
             {props.title}

@@ -1,28 +1,42 @@
 import React from 'react';
-import Header from '../components/Header';
-import InfoBlock from '../components/InfoBlock';
+import ContactBlock from '../components/ContactBlock';
 import Newsletter from '../components/Newsletter';
 import Footer from '../components/Footer';
+import NavBar from '../components/NavBar';
+import ContactForm from '../components/ContactForm';
 import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
 
 const Contact = () => {
   return (
-    <Stack align="center" spacing={20}>
-      <Header title="YOUTH HUNGER MISSION FOUNDATION"/>
-      <InfoBlock 
-        title="About Us" 
-        text="YHMF (Youth Hunger Mission Foundation) is a student-run, not for profit organization in Vancouver, British Columbia.
-        Founded in 2014, YHMF has been working towards greater social and equality change through a medium of hosting fundraising events to raise awareness and aid at-risk youth.
-        Although we have been operating on a local scale since our founding, we wish to progress to a provincial, or even a national scale."
-      />
-      <InfoBlock
-        title="Our Mission"
-        text="Our goal at YHMF is to raise awareness and funds to support at-risk youth in the Greater Vancouver area.
-        At-risk youth include those who are living in poverty, fleeing abuse, dealing with mental health issues, vulnerable to exploitation, or living on the street.
-        1 in every 5 children in BC are living in poverty. Our mission is to inspire people to help marginalized youth who face barriers to wellness and opportunity.
-        We raise funds through various means to donate to charities such as Covenant House Vancouver, the Surrey Food Bank, Nightshift, Street Ministries,
-        Youth Unlimited, and other charities that assist homeless and disenfranchised youth."
-      />
+    <Stack align="center" spacing={10}>
+      <NavBar navColor="secondary" iconColor="secondary"/>
+      <Stack alignItems="center">
+        <Stack direction="row" spacing={30}>
+          <Stack spacing={5}>
+            <Typography variant="h4" align="left" style={{ letterSpacing: 1, fontWeight: "bold" }} gutterBottom>
+              CONTACT US!
+            </Typography>
+            <ContactBlock
+              title="General Inquiries"
+              text="yhmfcanada@gmail.com"
+            />
+            <ContactBlock
+              title="Danny Yang | President"
+              text="yyfdanny1028@gmail.com"
+            />
+            <ContactBlock
+              title="Raymond Zou | Vice-President"
+              text="raymondzou0101@gmail.com"
+            />
+            <ContactBlock
+              title="Alex Guo | Outreach & Tech Executive"
+              text="alexlguo18@gmail.com"
+            />
+          </Stack>
+          <ContactForm/>
+        </Stack>
+      </Stack>
       <Stack align="center">
         <Newsletter/>
         <Footer/>

@@ -6,12 +6,15 @@ import { Image, StyleSheet } from 'react-native';
 import logo from '../assets/yhmflogo.png';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
+import Stack from '@mui/material/Stack';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import IconButton from '@mui/material/IconButton';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useNavigate } from 'react-router-dom';
 
-const NavBar = () => {
+const NavBar = (props) => {
   const navigate = useNavigate();
-  
+
   const styles = StyleSheet.create({
     logo: {
       width: 150,
@@ -24,31 +27,45 @@ const NavBar = () => {
       primary: {
         main: '#EDF2F4',
       },
+      secondary: {
+        main: '#000000',
+      },
     },
   });
 
   return (
     <ThemeProvider theme={theme}>
-      <AppBar id='navBar' position="static" >
+      <AppBar id='navBar' position="static">
       <Toolbar>
-        <Image style={styles.logo} source={logo}/>
-        <Box sx={{ flexGrow: 1 }} />
-        <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-          <ButtonGroup size="large" color="primary" aria-label="text button group">
-            <Button onClick={() => navigate("/")}>
-              Home
-            </Button>
-            <Button onClick={() => navigate("/events")}>
-              Events
-            </Button>
-            <Button onClick={() => navigate("/team")}>
-              The Team
-            </Button>
-            <Button onClick={() => navigate("/contact")}>
-              Contact
-            </Button>
-          </ButtonGroup>
-        </Box>
+        <a href="http://localhost:3000/">
+          <Image style={styles.logo} source={logo}/>
+        </a>
+        <Box sx={{ flexGrow: 1 }}/>
+          <Stack direction="row" spacing={1}>
+            <ButtonGroup variant="text" size="large" color={props.navColor} aria-label="text button group">
+              <Button onClick={() => navigate("/")}>
+                Home
+              </Button>
+              <Button onClick={() => navigate("/events")}>
+                Events
+              </Button>
+              <Button onClick={() => navigate("/team")}>
+                The Team
+              </Button>
+              <Button onClick={() => navigate("/contact")}>
+                Contact
+              </Button>
+            </ButtonGroup>
+            <Box sx={{ paddingTop: 0.3 }}>
+              <IconButton href="https://www.instagram.com/yhmfsociety/" target="_blank">
+                <InstagramIcon
+                  sx={{ fontSize: 30 }}
+                  color={props.iconColor}
+                />
+              </IconButton>
+            </Box>
+          </Stack>
+
       </Toolbar>
       </AppBar>
     </ThemeProvider>

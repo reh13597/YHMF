@@ -10,22 +10,22 @@ const Events = () => {
   return (
     <Stack align="center" spacing={20}>
       <Header title="UPCOMING AND PAST EVENTS!"/>
-      <EventBlock 
+      <EventBlock
         title="Krispy Kreme Donut Sale"
         text="wcnmb"
         image={event1}
       />
-      <EventBlock 
+      <EventBlock
         title="Krispy Kreme Donut Sale"
         text="wcnmb"
         image={event1}
       />
-      <EventBlock 
+      <EventBlock
         title="Krispy Kreme Donut Sale"
         text="wcnmb"
         image={event1}
       />
-      <EventBlock 
+      <EventBlock
         title="Krispy Kreme Donut Sale"
         text="wcnmb"
         image={event1}

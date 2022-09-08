@@ -9,12 +9,19 @@ const Header = (props) => {
   return (
     <View>
       <Box sx={{ backgroundColor: 'black', width: null, height: 625 }}>
-        <NavBar/>
+        <NavBar iconColor="primary"/>
         <Stack alignItems="center">
             <Text style={styles.text}>
               {props.title}
             </Text>
-            <Button variant="contained" style={styles.button}>Get Involved!</Button>
+            <Button
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdHH-zFVSJJZoc1TrcYkIfoQ4vKUex1eXdPuFDzwJ-jXxqzvw/viewform"
+              target="_blank"
+              variant="contained"
+              style={styles.button}
+            >
+              Get Involved!
+            </Button>
         </Stack>
       </Box>
     </View>
