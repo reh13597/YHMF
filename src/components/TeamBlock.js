@@ -33,6 +33,7 @@ const TeamBlock = () => {
           <TeamRole role="Event Executives"/>
           <TeamDesc name="Amy Zhang" email="amyzhangzyh@gmail.com" cell="604-710-5958" image={exec1}/>
           <TeamDesc name="Fiona Nie" email="jiayinie2005@gmail.com" cell="778-964-0429" image={exec1}/>
+          <TeamDesc name="Chungai Yu" email="chungaiyu15@gmail.com" cell="778-979-0231" image={exec1}/>
         </Stack>
       </Stack>
     );
