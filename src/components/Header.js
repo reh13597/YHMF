@@ -8,7 +8,7 @@ import { StyleSheet, Text, View } from "react-native";
 const Header = (props) => {
   return (
     <View>
-      <Box sx={{ backgroundColor: 'black', width: null, height: 625 }}>
+      <Box sx={{ backgroundColor: 'black', minHeight: 625 }}>
         <NavBar iconColor="primary"/>
         <Stack alignItems="center">
             <Text style={styles.text}>
@@ -40,8 +40,8 @@ const styles = StyleSheet.create({
   },
   button: {
     borderRadius: 10,
-    width: 215,
-    height: 60,
+    minWidth: 215,
+    minHeight: 60,
     fontSize: 18,
     fontWeight: "bold",
     color: "white",

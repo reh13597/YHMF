@@ -8,7 +8,7 @@ import logo from '../assets/yhmflogo.png';
 const Footer = () => {
     return (
         <Stack align="center" spacing={5}>
-            <Box sx={{ backgroundColor: 'black', width: null, height: 400 }}>
+            <Box sx={{ backgroundColor: 'black', minHeight: 400 }}>
                 <Image source={logo} style={styles.image}/>
                 <Typography color="#EDF2F4" variant="subtitle2" align="center" style={{ letterSpacing: 1.5 }} gutterBottom>
                     © 2022 Youth Hunger Mission Foundation | Website created & designed by Alex Guo
@@ -20,8 +20,8 @@ const Footer = () => {
 
 const styles = StyleSheet.create({
     image: {
-        width: 350,
-        height: 350,
+        maxWidth: 350,
+        minHeight: 350,
     },
 });
 

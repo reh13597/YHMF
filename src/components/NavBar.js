@@ -17,8 +17,8 @@ const NavBar = (props) => {
 
   const styles = StyleSheet.create({
     logo: {
-      width: 150,
-      height: 150,
+      minWidth: 150,
+      minHeight: 150,
     },
   });
 
