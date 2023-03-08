@@ -4,14 +4,13 @@ import TeamBlock from '../components/TeamBlock';
 import Newsletter from '../components/Newsletter';
 import Footer from '../components/Footer';
 import Stack from '@mui/material/Stack';
+import team from '../assets/team.png';
 
 const Team = () => {
   return (
-    <Stack align="center" spacing={10}>
-      <Header title="MEET THE TEAM!"/>
-      <Stack>
-        <TeamBlock/>
-      </Stack>
+    <Stack align="center" spacing={30}>
+      <Header image={team} title="MEET THE TEAM!"/>
+      <TeamBlock/>
       <Stack align="center">
         <Newsletter/>
         <Footer/>

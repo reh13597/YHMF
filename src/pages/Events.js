@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import PictureBlock from '../components/PictureBlock';
+import EventBlock from '../components/EventBlock';
 import Newsletter from '../components/Newsletter';
 import Footer from '../components/Footer';
 import Stack from '@mui/material/Stack';
@@ -11,49 +11,50 @@ import event4 from '../assets/event4.jpg';
 import event5 from '../assets/event5.JPG'
 import event6 from '../assets/event6.JPG'
 import event7 from '../assets/event7.JPG'
+import fooddrive from '../assets/fooddrive.png';
 
 const Events = () => {
   return (
-    <Stack align="center" spacing={20}>
-      <Header title="UPCOMING AND PAST EVENTS!"/>
+    <Stack align="center" spacing={25}>
+      <Header image={fooddrive} title="UPCOMING AND PAST EVENTS!"/>
 
-      <PictureBlock
+      <EventBlock
         title="Community Food Drive"
         text="02/18/2023 - 02/20/2023"
         image={event7}
       />
 
-      <PictureBlock
+      <EventBlock
         title="Bubble Tea Fundraiser w/ AAA"
         text="11/23/2022"
         image={event6}
       />
 
-      <PictureBlock
+      <EventBlock
         title="Krispy Kreme Donut Sale"
         text="09/24/2022"
         image={event5}
       />
 
-      <PictureBlock
+      <EventBlock
         title="Summer Bubble Tea and Freezie Sale"
         text="08/01/2022"
         image={event4}
       />
 
-      <PictureBlock
+      <EventBlock
         title="Youth Music Night"
         text="06/22/2022"
         image={event3}
       />
 
-      <PictureBlock
+      <EventBlock
         title="Mother's Day Flower Sale"
         text="05/07/2022"
         image={event2}
       />
 
-      <PictureBlock
+      <EventBlock
         title="Donut and Bubble Tea Sale"
         text="04/23/2022"
         image={event1}

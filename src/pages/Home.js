@@ -5,17 +5,18 @@ import Newsletter from '../components/Newsletter';
 import Footer from '../components/Footer';
 import Stack from '@mui/material/Stack';
 import {Helmet} from "react-helmet";
+import musicevent from '../assets/musicevent.png';
 
 const Home = () => {
   return (
-    <Stack align="center" spacing={20}>
+    <Stack align="center" spacing={25}>
       <Helmet>
         <meta charSet="utf-8" />
         <title>Youth Hunger Mission Foundation</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
 
-      <Header title="YOUTH HUNGER MISSION FOUNDATION"/>
+      <Header image={musicevent} title="YOUTH HUNGER MISSION FOUNDATION"/>
       <InfoBlock
         title="About Us"
         text="YHMF (Youth Hunger Mission Foundation) is a student-run, not for profit organization in Vancouver, British Columbia.
