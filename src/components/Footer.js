@@ -3,7 +3,7 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { Image, StyleSheet } from 'react-native';
-import logo from '../assets/yhmfLogo.png';
+import logo from '../assets/yhmflogo.png';
 
 const Footer = () => {
     return (
