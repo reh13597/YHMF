@@ -12,9 +12,9 @@ const Header = (props) => {
         <NavBar iconColor="primary"/>
       </Box>
 
-      <Box sx={{ minHeight: 450 }}>
+      <Box sx={{ minHeight: 650 }}>
         <Image source={props.image} style={styles.image}/>
-        <Stack alignItems="center">
+        <Stack alignItems="center" spacing={6}>
             <Text style={styles.text}>
               {props.title}
             </Text>
@@ -35,7 +35,7 @@ const Header = (props) => {
 const styles = StyleSheet.create({
   text: {
     color: "white",
-    fontSize: 60,
+    fontSize: 70,
     lineHeight: 250,
     letterSpacing: 6,
     fontWeight: "bold",

@@ -4,19 +4,19 @@ import EventBlock from '../components/EventBlock';
 import Newsletter from '../components/Newsletter';
 import Footer from '../components/Footer';
 import Stack from '@mui/material/Stack';
-import event1 from '../assets/event1.jpeg';
-import event2 from '../assets/event2.1.jpg';
-import event3 from '../assets/event3.1.jpg';
-import event4 from '../assets/event4.jpg';
-import event5 from '../assets/event5.JPG'
-import event6 from '../assets/event6.JPG'
-import event7 from '../assets/event7.JPG'
-import fooddrive from '../assets/fooddrive.png';
+import event1 from '../assets/events/event1.jpeg';
+import event2 from '../assets/events/event2.1.jpg';
+import event3 from '../assets/events/event3.1.jpg';
+import event4 from '../assets/events/event4.jpg';
+import event5 from '../assets/events/event5.JPG'
+import event6 from '../assets/events/event6.JPG'
+import event7 from '../assets/events/event7.JPG'
+import eventsPage from '../assets/eventsPage.png';
 
 const Events = () => {
   return (
     <Stack align="center" spacing={25}>
-      <Header image={fooddrive} title="UPCOMING AND PAST EVENTS!"/>
+      <Header image={eventsPage} title="UPCOMING AND PAST EVENTS!"/>
 
       <EventBlock
         title="Community Food Drive"

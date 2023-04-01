@@ -5,7 +5,7 @@ import Newsletter from '../components/Newsletter';
 import Footer from '../components/Footer';
 import Stack from '@mui/material/Stack';
 import {Helmet} from "react-helmet";
-import musicevent from '../assets/musicevent.png';
+import homePage from '../assets/homePage.png';
 
 const Home = () => {
   return (
@@ -16,7 +16,7 @@ const Home = () => {
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
 
-      <Header image={musicevent} title="YOUTH HUNGER MISSION FOUNDATION"/>
+      <Header image={homePage} title="YOUTH HUNGER MISSION FOUNDATION"/>
       <InfoBlock
         title="About Us"
         text="YHMF (Youth Hunger Mission Foundation) is a student-run, not for profit organization in Vancouver, British Columbia.
