@@ -12,7 +12,7 @@ const Header = (props) => {
         <NavBar iconColor="primary"/>
       </Box>
 
-      <Box sx={{ minHeight: 650 }}>
+      <Box sx={{ minHeight: 600 }}>
         <Image source={props.image} style={styles.image}/>
         <Stack alignItems="center" spacing={6}>
             <Text style={styles.text}>
