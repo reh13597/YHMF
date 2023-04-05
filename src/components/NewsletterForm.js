@@ -1,15 +1,27 @@
-import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
+import React from 'react';
+import TextField from '@mui/material/TextField';
 import EmailIcon from '@mui/icons-material/Email';
 import InputAdornment from '@mui/material/InputAdornment';
-import React from 'react';
+import Popup from './NewsletterPopup';
+import { useState } from 'react';
 import { StyleSheet } from "react-native";
 
 
-const Newsletter = () => {
+function NewsletterForm() {
+    const [buttonPopup, setButtonPopup] = useState(false);
+    const [email, setEmail] = useState('');
+    const clearEmail = () => {
+        setEmail('');
+        setButtonPopup(true);
+    }
+    const enterEmail = (e) => {
+        setEmail(e.target.value);
+    }
+
     return (
         <Stack id="newsletter" align="center" spacing={5}>
             <Box sx={{ paddingTop: 4 }}>
@@ -26,14 +38,17 @@ const Newsletter = () => {
                     InputProps={{
                         startAdornment: (
                             <InputAdornment position="start">
-                             <EmailIcon/>
+                                <EmailIcon/>
                             </InputAdornment>
                         ),
                     }}
                     variant="filled"
                     style={{ paddingRight: 22 }}
+                    value={email}
+                    onChange={enterEmail}
                 />
-                <Button variant="contained" style={styles.button}>Sign Up</Button>
+                <Button onClick={clearEmail} variant="contained" style={styles.button}>Sign Up</Button>
+                <Popup trigger={buttonPopup} setTrigger={setButtonPopup} on/>
             </Box>
         </Stack>
     );
@@ -50,4 +65,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default Newsletter;
+export default NewsletterForm;

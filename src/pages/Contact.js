@@ -1,6 +1,6 @@
 import React from 'react';
 import ContactBlock from '../components/ContactBlock';
-import Newsletter from '../components/Newsletter';
+import Newsletter from '../components/NewsletterForm';
 import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
 import ContactForm from '../components/ContactForm';
