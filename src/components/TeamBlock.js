@@ -6,7 +6,7 @@ import exec1 from '../assets/execs/exec1.png';
 import exec2 from '../assets/execs/exec2.png';
 import exec3 from '../assets/execs/exec3.jpg';
 import exec4 from '../assets/execs/exec4.png';
-import exec5 from '../assets/execs/exec5.png';
+import exec5 from '../assets/execs/exec8.JPG';
 import exec6 from '../assets/execs/exec6.png';
 
 const TeamBlock = () => {
